@@ -65,50 +65,7 @@ fn index_page<'a, G: Html>(cx: BoundedScope<'_, 'a>, page: &'a IndexPageStateRx)
     let widget_clone = create_signal(cx, widg);
     view! { cx,
     // code { (format!("API: {:?}", widget)) }
-      section(class="relative table w-full py-36 lg:py-64 bg-[url('../../assets/images/it/bg.jpg')] bg-no-repeat sm:bg-left bg-right overflow-hidden") {
-        div(class="container relative z-1") {
-          div(class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]") {
-            div(class="md:col-span-7") {
-              div(class="md:mr-6") {
-                span(class="text-xl font-semibold") {
-                  "ISODEC"
-                }
-                h3(class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5 text-black dark:text-white") {
-                  span(class="after:absolute after:right-0 after:left-0 after:bottom-2 after:h-1.5 after:w-auto after:bg-gradient-to-l after:to-blue-900 after:from-green-600 relative") {
-                    "Promoting"
-                  }
-                  br() {
-                  }
-                  "Community Development " br{}
-                  span(class="after:absolute after:right-0 after:left-0 after:bottom-2 after:h-1.5 after:w-auto after:bg-gradient-to-l after:to-blue-900 after:from-green-600 relative") {
-                    "& Social Justice"
-                  }
-                }
-                p(class="text-slate-400 text-lg max-w-xl") {
-                  "The Integrated Social Devlopment Center (Isodec) is .... "
-                }
-                div(class="mt-6") {
-                  a(class="btn bg-blue-900 hover:bg-indigo-700 border-blue-900 hover:border-indigo-700 text-white rounded-md", href="") {
-                    "More about us"
-                  }
-                  // a(href="#!", data-id="yba7hPeTSjk", class="btn btn-icon rounded-full bg-blue-900 hover:bg-indigo-700 border-blue-900 hover:border-indigo-700 text-white m-1 lightbox") {
-                  //   i(data-feather="video", class="h-4 w-4") {
-                  //   }
-                  // }
-                  span(class="font-semibold ml-1 align-middle") {
-                  }
-                }
-              }
-            }
-          }
-        }
-        div(class="absolute md:w-3/4 w-full top-1/2 -translate-y-1/2") {
-          div(class="absolute w-full h-[5000px] bg-slate-50 dark:bg-slate-800 md:opacity-100 opacity-90 top-1/2 -translate-y-1/2 md:-left-[10%] -left-[25%] rotate-12") {
-          }
-          div(class="absolute md:w-48 w-20 h-[5000px] bg-blue-900 top-1/2 -translate-y-1/2 md:right-[10%] -right-[1%] rotate-12") {
-          }
-        }
-      }
+
       section(class="relative md:pb-16 pb-12") {
         div(class="container md:mt-20 mt-12") {
           div(class="grid md:grid-cols-12 grid-cols-1 items-center") {
@@ -182,60 +139,7 @@ fn index_page<'a, G: Html>(cx: BoundedScope<'_, 'a>, page: &'a IndexPageStateRx)
                 )} //end of views
         }
       }
-      section(class="relative md:py-18 py-12") {
-        div(class="container md:mt-22 mt-12") {
-          div(class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]") {
-            div(class="md:col-span-6") {
-              div(class="lg:mr-8") {
-                div(class="relative") {
-                  img(alt="", class="rounded-full shadow-lg dark:shadow-gray-800", src="assets/images/it/about.jpg") {
-                  }
-                  div(class="absolute top-1/2 -translate-y-1/2 right-0 left-0 mx-auto lg:w-64 w-52 lg:h-64 h-52 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800") {
-                    div(class="text-center") {
-                      span(class="text-blue-900 text-2xl font-bold mb-0 block") {
-                        span(data-target="15", class="counter-value text-6xl font-bold") {
-                          "35"
-                        }
-                        "+"
-                      }
-                      span(class="font-semibold block mt-2") {
-                        "Years"
-                        br() {
-                        }
-                        "Experience"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            div(class="md:col-span-6") {
-              div(class="lg:ml-8") {
-                h6(class="text-blue-900 text-sm font-bold uppercase mb-2") {
-                  "Unmatched track record"
-                }
-                h3(class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold") {
-                  "Isodec achieved ... "
-                  br() {
-                  }
-                  "partnered with various"
-                  br() {
-                  }
-                  "in communities."
-                }
-                p(class="text-slate-400 max-w-xl mb-6") {
-                  "and much more with just a few taps. commodo consequat. Duis aute irure."
-                }
-                a(class="btn bg-blue-900 hover:bg-indigo-700 border-blue-900 hover:border-indigo-700 text-white rounded-md", href="page-services.html") {
-                  i(class="uil uil-notes") {
-                  }
-                  "Get Started"
-                }
-              }
-            }
-          }
-        }
-      }
+
 
 
       }
