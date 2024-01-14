@@ -1,0 +1,69 @@
+#-*- mode: org -*-
+#+TITLE:     Org-Test project4
+#+AUTHOR:    Aleandro
+#+STARTUP:   overview
+#+DESCRIPTION: Org Babel reference card
+
+
+* Current Fixes
+** API Authentication:
+*** Backend Workflow
+Add `identity: Option<Identity>` on every routes that needs authenticated.
+then refer to the process on `client.rest`
+
+* Starting Test
+#+BEGIN_SRC rust :crates '((rand . 0) (sha2 . 0) (hex . 0))
+extern crate rand;
+extern crate sha2;
+extern crate hex;
+
+use sha2::Sha256;
+use crate::rand::Rng;
+use crate::sha2::Digest;
+
+pub fn constant_time_compare(a: &str, b: &str) -> bool {
+    a.bytes()
+        .zip(b.bytes())
+        .fold(0, |acc, (a, b)| acc | (a ^ b))
+        == 0
+}
+
+fn main() {
+
+    let random_bytes = rand::thread_rng().gen::<[u8; 32]>();
+    let mut hasher = Sha256::new();
+    // Hash it to avoid exposing it in the database.
+    hasher.update(random_bytes);
+    let sess_verif = hex::encode(hasher.finalize());
+
+    // println!("{}", hex_hashed_session_verifier);
+    let new_hash = hex::encode(random_bytes);
+    // println!("{}", new_hash);
+    let decoded_hash = hex::decode(new_hash);
+    let mut new_hasher = Sha256::new();
+    if let Ok(bytes) = decoded_hash {
+        new_hasher.update(bytes);
+        let ver_hash = hex::encode(new_hasher.finalize());
+        println!("{:?}", &sess_verif);
+        println!("{:?}", &ver_hash);
+
+        println!("{:?}", constant_time_compare(&sess_verif, &ver_hash));
+    }
+    // let decoded_verif = hex::decode(sess_verif);
+    // println!("{:?}\n{:?}", decoded_hash.expect("Error Decoding").to_string(), decoded_verif.expect("error Decoding").to_string());
+
+  }
+#+END_SRC
+
+#+RESULTS:
+: "4ac12e73c4547bdabc009d15c5b3c3888618d9b81f6b4c362cc08b6cda443ee1"
+: "4ac12e73c4547bdabc009d15c5b3c3888618d9b81f6b4c362cc08b6cda443ee1"
+: true
+* Back-Frontend Coordinative workflow
+** Menus
+ - [ ] Content Routes
+   - [ ] List Specific Menu Types
+   - [ ] Selective Requests
+   -
+**  Changelog
+*** Added page layout which will aggregate json data for Home, other grid pages (blog, gallery etc.)

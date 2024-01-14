@@ -1,0 +1,49 @@
+#-*- mode: org -*-
+#+TITLE:     Tech Build
+#+AUTHOR:    Aleandro
+#+STARTUP:   overview
+#+DESCRIPTION: Org Babel reference card
+* ~body~  
+** | The Menu Header 
+** ~header~ 
+:PROPERTIES:
+:data-table: testtable
+:END:
+*** | H1 Comment Instructions 
+*** ~h1~ 
+:PROPERTIES:
+:data-field: testfield
+:END:
+Skeleton Screen 
+*** ~h1~ 
+:PROPERTIES:
+:data-field: newfield
+:END:
+Skeleton Screen 
+** | On Top of DIV Layout 
+** ~div~ 
+:PROPERTIES:
+:class: wrap
+:END:
+Sample Text
+*** ~p~ 
+:PROPERTIES:
+:class: format
+:data-attribute: somethingsomething
+:END:
+Welcome to this page 
+*** ~div~ 
+:PROPERTIES:
+:class: flex-grid generic-card
+:END:
+**** | ADD .loading CLASS TO ANY ELEMENT TO SHIMMER/ANIMATE 
+**** ~div~ 
+:PROPERTIES:
+:class: card loading
+:END:
+Text  
+**** ~div~ 
+:PROPERTIES:
+:class: card loading
+:END:
+ 

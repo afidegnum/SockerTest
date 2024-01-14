@@ -1,0 +1,1332 @@
+html(class="light scroll-smooth", dir="ltr", lang="en") {
+  head() {
+    meta(charset="UTF-8") {
+    }
+    title() {
+      "Techwind - Tailwind CSS Multipurpose Landing Page Template"
+    }
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no") {
+    }
+    meta(content="Tailwind CSS Saas & Software Landing Page Template", name="description") {
+    }
+    meta(content="agency, application, business, clean, creative, cryptocurrency, it solutions, modern, multipurpose, nft marketplace, portfolio, saas, software, tailwind css", name="keywords") {
+    }
+    meta(content="Shreethemes", name="author") {
+    }
+    meta(name="website", content="https://shreethemes.in") {
+    }
+    meta(name="email", content="support@shreethemes.in") {
+    }
+    meta(content="1.5.0", name="version") {
+    }
+    meta(http-equiv="X-UA-Compatible", content="IE=edge") {
+    }
+    link(rel="shortcut icon", href="assets/images/favicon.ico") {
+    }
+    link(href="assets/libs/tobii/css/tobii.min.css", rel="stylesheet") {
+    }
+    link(href="assets/libs/tiny-slider/tiny-slider.css", rel="stylesheet") {
+    }
+    link(href="assets/libs/@iconscout/unicons/css/line.css", type="text/css", rel="stylesheet") {
+    }
+    link(href="assets/css/icons.css", rel="stylesheet") {
+    }
+    link(rel="stylesheet", href="assets/css/tailwind.css") {
+    }
+  }
+  body(class="font-nunito text-base text-black dark:text-white dark:bg-slate-900") {
+    nav(class="defaultscroll is-sticky", id="topnav", d-comp="navigation") {
+      p(class="flex h-10 items-center justify-center bg-sky-500 px-4 text-sm font-medium text-white sm:px-6 lg:px-8") {
+        "Tel: 0302"
+      }
+      div(class="container") {
+        a(class="logo pl-0", href="index.html") {
+          img(alt="", src="assets/images/logo-wide.png", class="inline-block dark:hidden") {
+          }
+          img(class="hidden dark:inline-block", alt="", src="assets/images/logo-wide.png") {
+          }
+        }
+        div(class="menu-extras") {
+          div(class="menu-item") {
+            a(class="navbar-toggle", onclick="toggleMenu()", id="isToggle") {
+              div(class="lines") {
+                span() {
+                }
+                span() {
+                }
+                span() {
+                }
+              }
+            }
+          }
+        }
+        ul(class="buy-button list-none mb-0") {
+          li(class="inline mb-0") {
+            a(href="", class="btn btn-icon rounded-full bg-blue-900/5 hover:bg-sky-600 border-blue-900/10 hover:border-sky-600 text-blue-900 hover:text-white") {
+              i(class="h-4 w-4", data-feather="key") {
+              }
+              svg(enable-background="new 0 0 24 24", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", id="keyhole-circle") {
+                path(fill="#6563FF", d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M13.7,11c-0.2,0.3-0.4,0.6-0.7,0.7V15c0,0.6-0.4,1-1,1s-1-0.4-1-1v-3.3c-1-0.6-1.3-1.8-0.7-2.7S12,7.7,13,8.3C14,8.8,14.3,10,13.7,11z") {
+                }
+              }
+            }
+          }
+        }
+        div(id="navigation") {
+          ul(class="navigation-menu") {
+            li() {
+              a(class="sub-menu-item", href="index.html") {
+                "Home"
+              }
+            }
+            li(class="has-submenu parent-parent-menu-item") {
+              a(href="latest.html") {
+                "Latest"
+              }
+            }
+            li(class="has-submenu parent-parent-menu-item") {
+              a(href="events.html") {
+                "Events"
+              }
+            }
+            li(class="has-submenu parent-parent-menu-item") {
+              a(href="projects.html") {
+                "Projects"
+              }
+            }
+            li(class="has-submenu parent-menu-item") {
+              a(href="publications.html") {
+                "Publications"
+              }
+            }
+            li(class="navigation-menu") {
+              a(href="publications.html") {
+                "Support Us"
+              }
+            }
+          }
+        }
+      }
+    }
+    div(class="container-fluid") {
+      div(class="profile-banner relative text-transparent") {
+        input(type="file", class="hidden", name="profile-banner", id="pro-banner", onchange="loadFile(event)") {
+        }
+        div(class="relative shrink-0") {
+          img(src="assets/images/blog/bg.jpg", class="h-96 w-full object-cover", id="profile-banner", alt="") {
+          }
+          div(class="absolute inset-0 bg-black/70") {
+          }
+          label(for="pro-banner", class="absolute inset-0 cursor-pointer") {
+          }
+        }
+      }
+    }
+    section(class="relative md:py-24 py-16") {
+      div(class="container relative") {
+        div(class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]") {
+          div(class="md:col-span-6") {
+            div(class="grid grid-cols-12 gap-4 items-center") {
+              div(class="col-span-7") {
+                div(class="grid grid-cols-1 gap-4") {
+                  img(alt="", class="shadow rounded-lg", src="assets/images/event/1.jpg") {
+                  }
+                }
+              }
+              div(class="col-span-5") {
+                div(class="grid grid-cols-1 gap-4") {
+                  img(src="assets/images/event/2.jpg", alt="", class="shadow rounded-lg") {
+                  }
+                  div(class="w-28 h-28 bg-indigo-600/10 rounded-lg") {
+                  }
+                }
+              }
+            }
+          }
+          div(class="md:col-span-6") {
+            div(class="lg:ms-5") {
+              h6(class="text-indigo-600 text-sm font-bold uppercase mb-2") {
+                "Outpace Your Competition"
+              }
+              h3(class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold") {
+                "Get access to the full"
+                br() {
+                }
+                "conference experience."
+              }
+              p(class="text-slate-400 max-w-xl mb-6") {
+                "Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure."
+              }
+              div(class="flex mt-6") {
+                i(class="uil uil-map-marker text-indigo-600 text-4xl me-4 mt-2") {
+                }
+                div(class="") {
+                  h5(class="text-xl font-semibold mb-0") {
+                    "Location"
+                  }
+                  p(class="text-slate-400 mt-2") {
+                    "C/54 Northwest Freeway,"
+                    br() {
+                    }
+                    "Suite 558, Houston,"
+                    br() {
+                    }
+                    "USA 485"
+                  }
+                }
+              }
+              div(class="flex mt-6") {
+                i(class="uil uil-clock text-indigo-600 text-4xl me-4 mt-2") {
+                }
+                div(class="") {
+                  h5(class="text-xl font-semibold mb-0") {
+                    "Time"
+                  }
+                  p(class="text-slate-400 mt-2") {
+                    "October 11, 2022"
+                    br() {
+                    }
+                    "9:00A.M. - 12:00P.M."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div(class="container relative md:mt-24 mt-16") {
+        div(class="grid grid-cols-1 pb-8 text-center") {
+          h6(class="text-indigo-600 text-sm font-bold uppercase mb-2") {
+            "Event Speakers"
+          }
+          h3(class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold") {
+            "Meet Our Speakers"
+          }
+          p(class="text-slate-400 max-w-xl mx-auto") {
+            "Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect."
+          }
+        }
+        div(class="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]") {
+          div(class="lg:col-span-3 md:col-span-6") {
+            div(class="group text-center") {
+              div(class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden") {
+                img(src="assets/images/client/04.jpg", class="", alt="") {
+                }
+                div(class="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 duration-500") {
+                }
+                ul(class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500") {
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(stroke="currentColor", width="24", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", fill="none", stroke-width="2", stroke-linejoin="round", stroke-linecap="round", class="feather feather-facebook h-4 w-4", height="24") {
+                        path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(class="feather feather-instagram h-4 w-4", xmlns="http://www.w3.org/2000/svg", stroke-linecap="round", stroke-linejoin="round", width="24", height="24", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2") {
+                        rect(width="20", height="20", rx="5", x="2", ry="5", y="2") {
+                        }
+                        path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z") {
+                        }
+                        line(x1="17.5", y1="6.5", x2="17.51", y2="6.5") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(stroke="currentColor", height="24", width="24", viewBox="0 0 24 24", class="feather feather-linkedin h-4 w-4", stroke-width="2", stroke-linejoin="round", fill="none", xmlns="http://www.w3.org/2000/svg", stroke-linecap="round") {
+                        path(d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z") {
+                        }
+                        rect(x="2", height="12", y="9", width="4") {
+                        }
+                        circle(cy="4", cx="4", r="2") {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div(class="content mt-3") {
+                a(class="text-lg font-semibold hover:text-indigo-600 duration-500", href="") {
+                  "Jack John"
+                }
+                p(class="text-slate-400") {
+                  "Speaker"
+                }
+              }
+            }
+          }
+          div(class="lg:col-span-3 md:col-span-6") {
+            div(class="group text-center") {
+              div(class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden") {
+                img(src="assets/images/client/05.jpg", class="", alt="") {
+                }
+                div(class="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 duration-500") {
+                }
+                ul(class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500") {
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg", width="24", stroke="currentColor", stroke-linecap="round", class="feather feather-facebook h-4 w-4", stroke-width="2", height="24", stroke-linejoin="round") {
+                        path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(viewBox="0 0 24 24", xmlns="http://www.w3.org/2000/svg", stroke-linecap="round", fill="none", stroke="currentColor", class="feather feather-instagram h-4 w-4", width="24", stroke-width="2", height="24", stroke-linejoin="round") {
+                        rect(ry="5", width="20", height="20", x="2", y="2", rx="5") {
+                        }
+                        path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z") {
+                        }
+                        line(x2="17.51", y2="6.5", x1="17.5", y1="6.5") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(stroke-width="2", xmlns="http://www.w3.org/2000/svg", fill="none", class="feather feather-linkedin h-4 w-4", height="24", stroke-linecap="round", viewBox="0 0 24 24", stroke-linejoin="round", width="24", stroke="currentColor") {
+                        path(d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z") {
+                        }
+                        rect(y="9", x="2", width="4", height="12") {
+                        }
+                        circle(cy="4", cx="4", r="2") {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div(class="content mt-3") {
+                a(href="", class="text-lg font-semibold hover:text-indigo-600 duration-500") {
+                  "Krista John"
+                }
+                p(class="text-slate-400") {
+                  "Speaker"
+                }
+              }
+            }
+          }
+          div(class="lg:col-span-3 md:col-span-6") {
+            div(class="group text-center") {
+              div(class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden") {
+                img(src="assets/images/client/06.jpg", class="", alt="") {
+                }
+                div(class="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 duration-500") {
+                }
+                ul(class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500") {
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(stroke-width="2", xmlns="http://www.w3.org/2000/svg", width="24", viewBox="0 0 24 24", stroke="currentColor", stroke-linecap="round", stroke-linejoin="round", class="feather feather-facebook h-4 w-4", height="24", fill="none") {
+                        path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(href="", class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white") {
+                      svg(stroke="currentColor", height="24", stroke-width="2", stroke-linejoin="round", stroke-linecap="round", xmlns="http://www.w3.org/2000/svg", width="24", fill="none", class="feather feather-instagram h-4 w-4", viewBox="0 0 24 24") {
+                        rect(rx="5", ry="5", x="2", y="2", width="20", height="20") {
+                        }
+                        path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z") {
+                        }
+                        line(x1="17.5", y1="6.5", y2="6.5", x2="17.51") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(stroke="currentColor", stroke-width="2", stroke-linecap="round", class="feather feather-linkedin h-4 w-4", height="24", stroke-linejoin="round", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24", fill="none", width="24") {
+                        path(d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z") {
+                        }
+                        rect(width="4", x="2", height="12", y="9") {
+                        }
+                        circle(r="2", cy="4", cx="4") {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div(class="content mt-3") {
+                a(class="text-lg font-semibold hover:text-indigo-600 duration-500", href="") {
+                  "Roger Jackson"
+                }
+                p(class="text-slate-400") {
+                  "Speaker"
+                }
+              }
+            }
+          }
+          div(class="lg:col-span-3 md:col-span-6") {
+            div(class="group text-center") {
+              div(class="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden") {
+                img(alt="", class="", src="assets/images/client/07.jpg") {
+                }
+                div(class="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 duration-500") {
+                }
+                ul(class="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 duration-500") {
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(stroke="currentColor", stroke-linecap="round", xmlns="http://www.w3.org/2000/svg", stroke-width="2", fill="none", stroke-linejoin="round", viewBox="0 0 24 24", width="24", height="24", class="feather feather-facebook h-4 w-4") {
+                        path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(viewBox="0 0 24 24", height="24", width="24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round", class="feather feather-instagram h-4 w-4", xmlns="http://www.w3.org/2000/svg") {
+                        rect(x="2", y="2", ry="5", height="20", rx="5", width="20") {
+                        }
+                        path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z") {
+                        }
+                        line(y1="6.5", y2="6.5", x2="17.51", x1="17.5") {
+                        }
+                      }
+                    }
+                  }
+                  li(class="inline") {
+                    a(class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full border border-indigo-600 bg-indigo-600 hover:border-indigo-600 hover:bg-indigo-600 text-white", href="") {
+                      svg(fill="none", viewBox="0 0 24 24", stroke-width="2", stroke-linecap="round", width="24", xmlns="http://www.w3.org/2000/svg", class="feather feather-linkedin h-4 w-4", stroke-linejoin="round", stroke="currentColor", height="24") {
+                        path(d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z") {
+                        }
+                        rect(y="9", width="4", x="2", height="12") {
+                        }
+                        circle(r="2", cx="4", cy="4") {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div(class="content mt-3") {
+                a(class="text-lg font-semibold hover:text-indigo-600 duration-500", href="") {
+                  "Johnny English"
+                }
+                p(class="text-slate-400") {
+                  "Speaker"
+                }
+              }
+            }
+          }
+        }
+      }
+      div(class="container relative") {
+        div(class="grid grid-cols-1 pb-8 text-center") {
+          h3(class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold") {
+            "Event Schedules"
+          }
+          p(class="text-slate-400 max-w-xl mx-auto") {
+            "Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect."
+          }
+        }
+        div(class="grid grid-cols-1 mt-8") {
+          ul(class="md:w-fit w-full mx-auto flex-wrap justify-center text-center p-3 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md", id="myTab", data-tabs-toggle="#StarterContent", role="tablist") {
+            li(role="presentation", class="md:inline-block block md:w-fit w-full") {
+              button(id="tuesday-tab", class="px-6 py-2 font-semibold rounded-md w-full duration-500 text-white bg-indigo-600", type="button", role="tab", aria-selected="true", data-tabs-target="#tuesday", aria-controls="tuesday") {
+                "Tuesday"
+              }
+            }
+            li(class="md:inline-block block md:w-fit w-full", role="presentation") {
+              button(aria-controls="wednesday", class="px-6 py-2 font-semibold rounded-md w-full duration-500 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800", aria-selected="false", data-tabs-target="#wednesday", type="button", id="wednesday-tab", role="tab") {
+                "Wednesday"
+              }
+            }
+            li(class="md:inline-block block md:w-fit w-full", role="presentation") {
+              button(data-tabs-target="#thursday", class="px-6 py-2 font-semibold rounded-md w-full duration-500 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800", type="button", id="thursday-tab", role="tab", aria-selected="false", aria-controls="thursday") {
+                "Thursday"
+              }
+            }
+            li(role="presentation", class="md:inline-block block md:w-fit w-full") {
+              button(aria-controls="friday", class="px-6 py-2 font-semibold rounded-md w-full duration-500 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800", aria-selected="false", type="button", role="tab", id="friday-tab", data-tabs-target="#friday") {
+                "Friday"
+              }
+            }
+          }
+          div(id="StarterContent", class="mt-1") {
+            div(id="tuesday", aria-labelledby="tuesday-tab", class="", role="tabpanel") {
+              div(class="grid grid-cols-1") {
+                div(class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900") {
+                  table(class="w-full text-start") {
+                    tbody() {
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "09:00AM - 10:00AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/1.jpg", alt="", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Digital Conference Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Raymond Turner"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "10:30AM - 11:30AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/2.jpg", alt="", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Conference On User Interface"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Cindy Morrison"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "12:00PM - 01:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(alt="", src="assets/images/event/eve-sch/3.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Business World Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Vincent Adams"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "02:00PM - 03:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/4.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Business Conference for professional"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Ana Heweit"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            div(class="hidden", id="wednesday", role="tabpanel", aria-labelledby="wednesday-tab") {
+              div(class="grid grid-cols-1") {
+                div(class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900") {
+                  table(class="w-full text-start") {
+                    tbody() {
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "09:00AM - 10:00AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/5.jpg", alt="", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Digital Conference Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Raymond Turner"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "10:30AM - 11:30AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="", src="assets/images/event/eve-sch/6.jpg") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Conference On User Interface"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Cindy Morrison"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out", href="") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "12:00PM - 01:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/7.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Business World Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Vincent Adams"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "02:00PM - 03:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/8.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Business Conference for professional"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Ana Heweit"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out", href="") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            div(id="thursday", class="hidden", role="tabpanel", aria-labelledby="thursday-tab") {
+              div(class="grid grid-cols-1") {
+                div(class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900") {
+                  table(class="w-full text-start") {
+                    tbody() {
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "09:00AM - 10:00AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", src="assets/images/event/eve-sch/9.jpg", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Digital Conference Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Raymond Turner"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "10:30AM - 11:30AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(alt="", src="assets/images/event/eve-sch/10.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Conference On User Interface"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Cindy Morrison"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out", href="") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "12:00PM - 01:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/11.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Business World Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Vincent Adams"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out", href="") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "02:00PM - 03:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="", src="assets/images/event/eve-sch/12.jpg") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Business Conference for professional"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Ana Heweit"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            div(id="friday", aria-labelledby="friday-tab", role="tabpanel", class="hidden") {
+              div(class="grid grid-cols-1") {
+                div(class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900") {
+                  table(class="w-full text-start") {
+                    tbody() {
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "09:00AM - 10:00AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", src="assets/images/event/eve-sch/5.jpg", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Digital Conference Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Raymond Turner"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "10:30AM - 11:30AM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/6.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Conference On User Interface"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Cindy Morrison"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out", href="") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "12:00PM - 01:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(src="assets/images/event/eve-sch/7.jpg", class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(href="", class="hover:text-indigo-600 text-lg font-semibold") {
+                                "Business World Event Intro"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Vincent Adams"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                      tr() {
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[200px] text-slate-400") {
+                          "02:00PM - 03:00PM"
+                        }
+                        td(class="p-3 border-b border-gray-100 dark:border-gray-700 min-w-[540px] py-12 px-5") {
+                          div(class="flex items-center") {
+                            img(class="rounded-full h-24 w-24 shadow-md dark:shadow-gray-700", src="assets/images/event/eve-sch/8.jpg", alt="") {
+                            }
+                            div(class="ms-4") {
+                              a(class="hover:text-indigo-600 text-lg font-semibold", href="") {
+                                "Business Conference for professional"
+                              }
+                              p(class="text-slate-400 mt-2") {
+                                "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century"
+                              }
+                            }
+                          }
+                        }
+                        td(class="text-center border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px] text-slate-400") {
+                          span(class="block") {
+                            "Speaker"
+                          }
+                          span(class="block text-black dark:text-white text-md mt-1") {
+                            "Ana Heweit"
+                          }
+                        }
+                        td(class="text-end border-b border-gray-100 dark:border-gray-700 py-12 px-5 min-w-[180px]") {
+                          a(href="", class="relative inline-block tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 font-medium hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out") {
+                            "Buy Ticket"
+                            i(class="uil uil-arrow-right") {
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer(class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200") {
+      div(class="container") {
+        div(class="grid grid-cols-12") {
+          div(class="col-span-12") {
+            div(class="py-[60px] px-0") {
+              div(class="grid md:grid-cols-12 grid-cols-1 gap-[30px]") {
+                div(class="lg:col-span-4 md:col-span-12") {
+                  a(href="#", class="text-[22px] focus:outline-none") {
+                    img(alt="", src="assets/images/logo-light.png") {
+                    }
+                  }
+                  p(class="mt-6 text-gray-300") {
+                    "Start working with Tailwind CSS that can provide everything you need to generate awareness, drive traffic, connect."
+                  }
+                  ul(class="list-none mt-6") {
+                    li(class="inline") {
+                      a(target="_blank", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="https://1.envato.market/techwind") {
+                        i(class="uil uil-shopping-cart align-middle", title="Buy Now") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(href="https://dribbble.com/shreethemes", target="_blank", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600") {
+                        i(class="uil uil-dribbble align-middle", title="dribbble") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(href="https://www.behance.net/shreethemes", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", target="_blank") {
+                        i(class="uil uil-behance", title="Behance") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(target="_blank", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="http://linkedin.com/company/shreethemes") {
+                        i(title="Linkedin", class="uil uil-linkedin") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="https://www.facebook.com/shreethemes", target="_blank") {
+                        i(title="facebook", class="uil uil-facebook-f align-middle") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(href="https://www.instagram.com/shreethemes/", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", target="_blank") {
+                        i(class="uil uil-instagram align-middle", title="instagram") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(target="_blank", class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="https://twitter.com/shreethemes") {
+                        i(class="uil uil-twitter align-middle", title="twitter") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="mailto:support@shreethemes.in") {
+                        i(class="uil uil-envelope align-middle", title="email") {
+                        }
+                      }
+                    }
+                    li(class="inline") {
+                      a(class="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600", href="https://forms.gle/QkTueCikDGqJnbky9", target="_blank") {
+                        i(class="uil uil-file align-middle", title="customization") {
+                        }
+                      }
+                    }
+                  }
+                }
+                div(class="lg:col-span-2 md:col-span-4") {
+                  h5(class="tracking-[1px] text-gray-100 font-semibold") {
+                    "Company"
+                  }
+                  ul(class="list-none footer-list mt-6") {
+                    li() {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="page-aboutus.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "About us"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(href="page-services.html", class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Services"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="page-team.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Team"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(href="page-pricing.html", class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Pricing"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="portfolio-creative-four.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Project"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="blog.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Blog"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="auth-login.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Login"
+                      }
+                    }
+                  }
+                }
+                div(class="lg:col-span-3 md:col-span-4") {
+                  h5(class="tracking-[1px] text-gray-100 font-semibold") {
+                    "Usefull Links"
+                  }
+                  ul(class="list-none footer-list mt-6") {
+                    li() {
+                      a(href="page-terms.html", class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Terms of Services"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="page-privacy.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Privacy Policy"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out", href="documentation.html") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Documentation"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(href="changelog.html", class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Changelog"
+                      }
+                    }
+                    li(class="mt-[10px]") {
+                      a(href="widget.html", class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out") {
+                        i(class="uil uil-angle-right-b me-1") {
+                        }
+                        "Widget"
+                      }
+                    }
+                  }
+                }
+                div(class="lg:col-span-3 md:col-span-4") {
+                  h5(class="tracking-[1px] text-gray-100 font-semibold") {
+                    "Newsletter"
+                  }
+                  p(class="mt-6") {
+                    "Sign up and receive the latest tips via email."
+                  }
+                  form() {
+                    div(class="grid grid-cols-1") {
+                      div(class="foot-subscribe my-3") {
+                        label(class="form-label") {
+                          "Write your email"
+                          span(class="text-red-600") {
+                            "*"
+                          }
+                        }
+                        div(class="form-icon relative mt-2") {
+                          i(class="w-4 h-4 absolute top-3 left-4", data-feather="mail") {
+                          }
+                          input(class="form-input bg-gray-800 border border-gray-800 text-gray-100 pl-12 focus:shadow-none", placeholder="Email", required="", name="email", type="email") {
+                          }
+                        }
+                      }
+                      button(class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md", name="send", id="submitsubscribe", type="submit") {
+                        "Subscribe"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div(class="py-[30px] px-0 border-t border-slate-800") {
+        div(class="container text-center") {
+          div(class="grid md:grid-cols-2 items-center") {
+            div(class="md:text-left text-center") {
+              p(class="mb-0") {
+                "©"
+                script() {
+                  "document.write(new Date().getFullYear())"
+                }
+                "Techwind. Design with"
+                i(class="mdi mdi-heart text-red-600") {
+                }
+                "by"
+                a(class="text-reset", href="https://shreethemes.in/", target="_blank") {
+                  "Shreethemes"
+                }
+                "."
+              }
+            }
+            ul(class="list-none md:text-right text-center mt-6 md:mt-0") {
+              li(class="inline") {
+                a(href="") {
+                  img(title="American Express", alt="", class="max-h-6 inline", src="assets/images/payments/american-ex.png") {
+                  }
+                }
+              }
+              li(class="inline") {
+                a(href="") {
+                  img(src="assets/images/payments/discover.png", alt="", class="max-h-6 inline", title="Discover") {
+                  }
+                }
+              }
+              li(class="inline") {
+                a(href="") {
+                  img(title="Master Card", src="assets/images/payments/master-card.png", alt="", class="max-h-6 inline") {
+                  }
+                }
+              }
+              li(class="inline") {
+                a(href="") {
+                  img(src="assets/images/payments/paypal.png", title="Paypal", alt="", class="max-h-6 inline") {
+                  }
+                }
+              }
+              li(class="inline") {
+                a(href="") {
+                  img(title="Visa", src="assets/images/payments/visa.png", class="max-h-6 inline", alt="") {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    div(class="cookie-popup fixed max-w-lg bottom-3 right-3 left-3 sm:left-0 sm:right-0 mx-auto bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md py-5 px-6 z-50") {
+      p(class="text-slate-400") {
+        "This website uses cookies to provide you with a great user experience. By using it, you accept our"
+        a(href="https://shreethemes.in", target="_blank", class="text-emerald-600 dark:text-emerald-500 font-semibold") {
+          "use of cookies"
+        }
+      }
+      div(class="cookie-popup-actions text-right") {
+        button(class="absolute border-none bg-none p-0 cursor-pointer font-semibold top-2 right-2") {
+          i(class="uil uil-times text-dark dark:text-slate-200 text-2xl") {
+          }
+        }
+      }
+    }
+    a(class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9", href="#", onclick="topFunction()", id="back-to-top") {
+      i(class="uil uil-arrow-up") {
+      }
+    }
+    div(class="fixed top-1/4 -right-2 z-50") {
+      span(class="relative inline-block rotate-90") {
+        input(type="checkbox", id="chk", class="checkbox opacity-0 absolute") {
+        }
+        label(for="chk", class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8") {
+          i(class="uil uil-moon text-[20px] text-yellow-500") {
+          }
+          i(class="uil uil-sun text-[20px] text-yellow-500") {
+          }
+          span(class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7") {
+          }
+        }
+      }
+    }
+  }
+}

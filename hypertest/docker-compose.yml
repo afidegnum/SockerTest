@@ -1,0 +1,25 @@
+version: "3"
+services:
+  hypertest:
+    build:
+      context: .
+      args:
+        UID: 1000
+        GID: 1000
+    restart: always
+    user: root
+    volumes:
+      - mysocket:/tmp:rw
+    ports:
+      - 4500:4500
+    expose:
+      - "4500"
+    environment:
+      - RUST_BACKTRACE=1
+networks:
+  default:
+    name: mynet
+    external: true
+volumes:
+  mysocket:
+    external: true

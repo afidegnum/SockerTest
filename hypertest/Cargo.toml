@@ -1,0 +1,16 @@
+[package]
+name = "hypertest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyperlocal = "0.8"
+hyper = "0.14"
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0.81"
+derive_more = "0.99.17"
+hyper-timeout = "0.4"
+hyper-util = { version = "0.1", features = ["client-legacy", "http1"] }

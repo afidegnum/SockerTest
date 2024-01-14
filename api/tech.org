@@ -1,0 +1,13 @@
+#-*- mode: org -*-
+#+TITLE:     Tech Build
+#+AUTHOR:    Aleandro
+#+STARTUP:   overview
+#+DESCRIPTION: Org Babel reference card
+* ~Tags~ Description
+*** Objectives
+** Notes
+*Sample* Notes
+* *Basic* Layouts
+** ~NewTag~ List
+** Single *Item*
+normal *text* to watch.

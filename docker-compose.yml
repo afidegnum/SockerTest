@@ -1,0 +1,169 @@
+services:
+  db:
+    build:
+      context: ./age
+      # image: "postgres:13"
+      # user: afidegnum:afidegnum
+    volumes:
+      - ./Data/pgdata:/var/lib/postgresql/data
+      - ./Data/db/:/docker-entrypoint-initdb.d/
+      # - ./Data/db/public.sql:/docker-entrypoint-initdb.d/public.sql
+    environment:
+      - POSTGRES_USER=isonet
+      - POSTGRES_PASSWORD=iso2023
+      - POSTGRES_DB=isonet
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+  api:
+    build:
+      context: ./api
+      # target: final
+    depends_on:
+      - db
+    user: afidegnum:afidegnum
+    volumes:
+      - ./Data/socket/:/tmp/sock/
+    env_file:
+      - ./api/.env
+    ports:
+      - 4400:4400
+    expose:
+      - "4400"
+    environment:
+      - CUSTOMERS_HOST=db
+    networks:
+      mynet:
+    healthcheck:
+      test: curl --fail http://localhost:4400/ping/ || exit 1
+      interval: 50s
+      timeout: 10s
+      retries: 5
+  front:
+    build:
+      context: ./front
+      # target: final
+    depends_on:
+      - api
+    user: root
+    volumes:
+      - ./Data/socket/:/tmp/sock/
+      - ./front/static/:/app/static/
+      # ./Data/front_static/:/app/static/
+      # - ./front/static/:                     # TODO check equivalent bridge between volume and rust's static file.
+      #  condition: service_healthy
+      #   - ./Data/socket/:/tmp/
+      #   # - ./Data/init:/app/
+    environment:
+      - PERSEUS_HOST=0.0.0.0
+      - PERSEUS_PORT=4401
+      - CUSTOMERS_HOST=api
+    ports:
+      - 4401:4401
+    expose:
+      - "4401"
+    networks:
+      mynet:
+    healthcheck:
+      test: curl --fail http://localhost:4401/ || exit 1
+      interval: 50s
+      timeout: 20s
+      retries: 5
+networks:
+  mynet:
+    driver: bridge
+    enable_ipv6: false
+# version: "3.8"
+# services:
+#   db:
+#     image: "postgres:13"
+#     ports:
+#       - "5435:5432"
+#     volumes:
+#       - ./Data/pgdata:/var/lib/postgresql/data
+#       - ./Data/db/public.sql:/docker-entrypoint-initdb.d/public.sql
+#     environment:
+#       - POSTGRES_USER=isonet
+#       - POSTGRES_PASSWORD=iso2023
+#       - POSTGRES_DB=isonet
+#   api:
+#     build:
+#       context: ./api
+#       target: final
+#     depends_on:
+#       - db
+#     volumes:
+#       - ./Data/socket/iso-uds.socket:/tmp/iso-uds.socket:rw
+#     env_file:
+#       - ./api/.env
+#     ports:
+#       - 4000:4000
+#   front:
+#     build:
+#       context: ./front
+#       target: final
+#     depends_on:
+#       - api
+#     volumes:
+#       - ./Data/public_files:/static/assets
+#       - ./Data/socket/iso-uds.socket:/tmp/iso-uds.socket
+#     environment:
+#       - PERSEUS_HOST=0.0.0.0
+#       - PERSEUS_PORT=4001
+#     ports:
+#       - 4001:4001
+
+# networks:
+#   default:
+#     name: iso-stack
+
+# # # Comments are provided throughout this file to help you get started.
+# # # If you need more help, visit the Docker compose reference guide at
+# # # https://docs.docker.com/compose/compose-file/
+
+# # # Here the instructions define your application as a service called "server".
+# # # This service is built from the Dockerfile in the current directory.
+# # # You can add other services your application may depend on here, such as a
+# # # database or a cache. For examples, see the Awesome Compose repository:
+# # # https://github.com/docker/awesome-compose
+# # services:
+# #   server:
+# #     build:
+# #       context: .
+# #       target: final
+# #     ports:
+# #       - 8081:8081
+
+# # # The commented out section below is an example of how to define a PostgreSQL
+# # # database that your application can use. `depends_on` tells Docker Compose to
+# # # start the database before your application. The `db-data` volume persists the
+# # # database data between container restarts. The `db-password` secret is used
+# # # to set the database password. You must create `db/password.txt` and add
+# # # a password of your choosing to it before running `docker compose up`.
+# # #     depends_on:
+# # #       db:
+# # #         condition: service_healthy
+# # #   db:
+# # #     image: postgres
+# # #     restart: always
+# # #     user: postgres
+# # #     secrets:
+# # #       - db-password
+# # #     volumes:
+# # #       - db-data:/var/lib/postgresql/data
+# # #     environment:
+# # #       - POSTGRES_DB=example
+# # #       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+# # #     expose:
+# # #       - 5432
+# # #     healthcheck:
+# # #       test: [ "CMD", "pg_isready" ]
+# # #       interval: 10s
+# # #       timeout: 5s
+# # #       retries: 5
+# # # volumes:
+# # #   db-data:
+# # # secrets:
+# # #   db-password:
+# # #     file: db/password.txt
